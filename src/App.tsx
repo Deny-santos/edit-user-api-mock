@@ -104,7 +104,7 @@ function App() {
             </BtnContainer>
 
             {selectedCard?.id === user.id ? (
-              <Modal city={selectedCard!.city} name={selectedCard!.name} onclose={handleModalClose} />
+              <Modal city={selectedCard!.city} name={selectedCard!.name} avatar={user.avatar} onclose={handleModalClose} />
             ) : ""}
           </Card>
         ))}
